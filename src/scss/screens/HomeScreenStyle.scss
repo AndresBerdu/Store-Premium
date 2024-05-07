@@ -3,53 +3,64 @@ body {
     padding: 0;
 }
 
-.topbar {
-    background: #EAFFE7;
+.body {
+
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    color: #000000;
+    justify-content: center;
+    background-color: #B7C58F;
 
-    &-logo {
-        display: flex;
-        align-items: center;
+    &-container {
 
-        &-icon {
-            font-size: 60px;
-            margin-right: 10px;
+        margin-top: 100px;
+        text-align: center;
+
+        &-title{
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-size: 40px;
+            font-style: normal;
+            color: #5F9446;
         }
 
         &-text {
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
             font-size: 30px;
+            color: #FFFFFF;
+        }
+
+        &-text-sentence {
             font-family: "Josefin Sans", sans-serif;
             font-optical-sizing: auto;
-            font-weight: 300;
+            font-weight: 600;
             font-style: normal;
+            font-size: 28px;
+            color: #5F9446;
+        }
+
+        &-line {
+            background: #FFFFFF;
+            border: none;
+            height: 2px;
+        }
+        
+        &-button {
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            color: #5F9446;
+            background-color: #FFFFFF;
+            margin-top: 20px;
+            padding: 20px;
         }
     }
 
-    &-tag {
-        display: flex;
-        list-style: none;
-
-        &-list {
-            margin-inline-start: 50px;
-            font-size: 25px;
-            font-family: "Josefin Sans", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 300;
-            font-style: normal;
-        }
-    }
-
-    &-icon {
-        font-size: 40px;
-        margin-inline-start: 30px;
-
-        &-count {
-            background: red;
-            
-        }
+    &-img {
+        width: 300px;
+        height: 300px;
     }
 }
