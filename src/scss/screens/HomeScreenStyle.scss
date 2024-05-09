@@ -29,7 +29,6 @@ body {
             font-weight: 400;
             font-style: normal;
             font-size: 30px;
-            padding: auto;-inline-start: 40px;
             color: #FFFFFF;
         }
 
@@ -182,4 +181,11 @@ body {
             }
         }
     }
+}
+
+.body3 {
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    background-color: #007755;
 }

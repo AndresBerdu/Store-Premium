@@ -11,9 +11,12 @@ import disheVegetarian1 from '../assets/DisheVegetarian1.jpg';
 import disheVegetarian2 from '../assets/DisheVegetarian2.jpg';
 import disheVegetarian3 from '../assets/DisheVegetarian3.jpg';
 import disheVegetarian4 from '../assets/DisheVegetarian4.jpg';
+import logoStarbucks from '../assets/LogoStarBucks.png';
+import coffeeStarbucks from '../assets/CoffeeStarBucks.png';
 
 //icons
 import { LuSalad } from "react-icons/lu";
+import { BiCoffeeTogo } from "react-icons/bi";
 
 //Style
 import '../scss/screens/HomeScreenStyle.scss';
@@ -46,10 +49,10 @@ const HomeScreen = () => {
 
       <div className='body2'>
         <div className='body2-imagesVegetarian'>
-          <img className='body2-imagesVegetarian-img1' src={disheVegetarian1} alt="Dishe Vegetarian chiken"/>
-          <img className='body2-imagesVegetarian-img2' src={disheVegetarian2} alt="Dishe Vegetarian chiken" />
-          <img className='body2-imagesVegetarian-img3' src={disheVegetarian3} alt="Dishe Vegetarian chiken"/>
-          <img className='body2-imagesVegetarian-img4' src={disheVegetarian4} alt="Dishe Vegetarian chiken" />
+          <img className='body2-imagesVegetarian-img1' src={disheVegetarian1} alt="image of dishe vegetarian"/>
+          <img className='body2-imagesVegetarian-img2' src={disheVegetarian2} alt="image of dishe vegetarian" />
+          <img className='body2-imagesVegetarian-img3' src={disheVegetarian3} alt="image of dishe vegetarian"/>
+          <img className='body2-imagesVegetarian-img4' src={disheVegetarian4} alt="image of dishe vegetarian" />
         </div>
         <div className='body2-container2'>
           <h1 className='body2-container2-title'>FOR ALL THOSE PEOPLE</h1>
@@ -67,8 +70,27 @@ const HomeScreen = () => {
         </div>
       </div>
 
-      <div>
-        
+      <div className='body3'>
+        <div className='body3-container-logo'>
+          <img src={logoStarbucks} alt="Logo Starbucks" />
+        </div>
+        <div className='body2-container3'>
+          <h1 className='body3-container3-title'>TAKE A BREAK FAST</h1>
+          <h1 className='body3-container3-title'>TAKE YOUR DREAMS</h1>
+          <div className='body3-container3-button'>
+            <Link 
+              className='body3-container3-button-text' 
+              style={{ textDecoration: 'none', color: 'inherit'}}
+              to='/Dishes'
+            >
+              Coffee
+              <BiCoffeeTogo/>
+            </Link> 
+          </div>
+        </div>
+        <div>
+            <img src={coffeeStarbucks} alt="" />
+          </div>
       </div>
     </div>
   )
